@@ -9,7 +9,6 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Team {
@@ -20,14 +19,9 @@ public class Team {
     @Column
     private String teamName;
 
-    @JoinColumn
-    @OneToMany(mappedBy = "team")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "team")
     private List<Member> members = new ArrayList<>();
 
 
-    @Builder
-    private Team(String teamName) {
-        this.teamName = teamName;
-    }
 
 }

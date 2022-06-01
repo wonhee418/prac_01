@@ -1,12 +1,10 @@
 package com.practice.prac_01.dto;
 
 import com.practice.prac_01.model.Team;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
