@@ -8,6 +8,7 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Member {
@@ -15,8 +16,11 @@ public class Member {
     @Id
     private Long id;
 
-    @Column(name = "username")
+    @Column(name = "username", nullable = false)
     private String username;
+
+    @Column(name = "age", nullable = false)
+    private String age;
 
     @ManyToOne
     @JoinColumn(name = "TEAM_ID") //
