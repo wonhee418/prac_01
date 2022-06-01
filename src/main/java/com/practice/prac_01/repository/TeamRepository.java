@@ -1,4 +1,7 @@
 package com.practice.prac_01.repository;
 
-public interface TeamRepository {
+import com.practice.prac_01.model.Team;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TeamRepository extends JpaRepository<Team, Long> {
 }

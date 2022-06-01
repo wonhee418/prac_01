@@ -20,7 +20,7 @@ public class Member {
     private String username;
 
     @Column(name = "age", nullable = false)
-    private String age;
+    private int age;
 
     @ManyToOne
     @JoinColumn(name = "TEAM_ID") //

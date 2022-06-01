@@ -10,5 +10,6 @@ import lombok.*;
 @AllArgsConstructor
 public class MemberRequestDto {
     private String username;
+    private int age;
     private Team team;
 }

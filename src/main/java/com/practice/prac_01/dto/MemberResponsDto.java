@@ -9,4 +9,5 @@ import lombok.*;
 @AllArgsConstructor
 public class MemberResponsDto {
     private String username;
+    private int age;
 }
